@@ -109,7 +109,7 @@
 		3E19353D1D62E0E3005B422E /* WQImageDisplayView */ = {
 			isa = PBXGroup;
 			children = (
-				3EA5F66E1D6557BC00DFAEA5 /* Classes */,
+				3EA5F66F1D6579F600DFAEA5 /* Classes */,
 				3E1935411D62E0E3005B422E /* AppDelegate.h */,
 				3E1935421D62E0E3005B422E /* AppDelegate.m */,
 				3E1935441D62E0E3005B422E /* ViewController.h */,
@@ -150,7 +150,7 @@
 			path = WQImageDisplayViewUITests;
 			sourceTree = "<group>";
 		};
-		3EA5F66E1D6557BC00DFAEA5 /* Classes */ = {
+		3EA5F66F1D6579F600DFAEA5 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
 				3E1935741D62E856005B422E /* WQImageDisplayView.h */,
