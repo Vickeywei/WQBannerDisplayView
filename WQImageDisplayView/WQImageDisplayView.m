@@ -268,7 +268,7 @@ static CGFloat pageControlHeight = 50;
         self.direction = 1;
     }
     else {
-#warning 如果你想实现往做滑动后,定时器也是按着这个方向滑动,就可以放开下面的代码
+//#warning 如果你想实现往做滑动后,定时器也是按着这个方向滑动,就可以放开下面的代码
        // self.direction = -1;
     }
 }
