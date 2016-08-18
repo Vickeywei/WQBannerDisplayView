@@ -15,6 +15,9 @@
 		3E19354E1D62E0E3005B422E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3E19354C1D62E0E3005B422E /* LaunchScreen.storyboard */; };
 		3E1935591D62E0E3005B422E /* WQImageDisplayViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E1935581D62E0E3005B422E /* WQImageDisplayViewTests.m */; };
 		3E1935641D62E0E3005B422E /* WQImageDisplayViewUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E1935631D62E0E3005B422E /* WQImageDisplayViewUITests.m */; };
+		3E1935731D62E112005B422E /* WQImageDisplayButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E1935721D62E112005B422E /* WQImageDisplayButton.m */; };
+		3E1935761D62E856005B422E /* WQImageDisplayView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E1935751D62E856005B422E /* WQImageDisplayView.m */; };
+		3E1935781D630C36005B422E /* place_image.png in Resources */ = {isa = PBXBuildFile; fileRef = 3E1935771D630C36005B422E /* place_image.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +54,11 @@
 		3E19355F1D62E0E3005B422E /* WQImageDisplayViewUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WQImageDisplayViewUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3E1935631D62E0E3005B422E /* WQImageDisplayViewUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WQImageDisplayViewUITests.m; sourceTree = "<group>"; };
 		3E1935651D62E0E3005B422E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3E1935711D62E112005B422E /* WQImageDisplayButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WQImageDisplayButton.h; path = ../WQImageDisplayButton.h; sourceTree = "<group>"; };
+		3E1935721D62E112005B422E /* WQImageDisplayButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WQImageDisplayButton.m; path = ../WQImageDisplayButton.m; sourceTree = "<group>"; };
+		3E1935741D62E856005B422E /* WQImageDisplayView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WQImageDisplayView.h; path = ../WQImageDisplayView.h; sourceTree = "<group>"; };
+		3E1935751D62E856005B422E /* WQImageDisplayView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WQImageDisplayView.m; path = ../WQImageDisplayView.m; sourceTree = "<group>"; };
+		3E1935771D630C36005B422E /* place_image.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = place_image.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,12 +109,14 @@
 		3E19353D1D62E0E3005B422E /* WQImageDisplayView */ = {
 			isa = PBXGroup;
 			children = (
+				3EA5F66E1D6557BC00DFAEA5 /* Classes */,
 				3E1935411D62E0E3005B422E /* AppDelegate.h */,
 				3E1935421D62E0E3005B422E /* AppDelegate.m */,
 				3E1935441D62E0E3005B422E /* ViewController.h */,
 				3E1935451D62E0E3005B422E /* ViewController.m */,
 				3E1935471D62E0E3005B422E /* Main.storyboard */,
 				3E19354A1D62E0E3005B422E /* Assets.xcassets */,
+				3E1935771D630C36005B422E /* place_image.png */,
 				3E19354C1D62E0E3005B422E /* LaunchScreen.storyboard */,
 				3E19354F1D62E0E3005B422E /* Info.plist */,
 				3E19353E1D62E0E3005B422E /* Supporting Files */,
@@ -138,6 +148,17 @@
 				3E1935651D62E0E3005B422E /* Info.plist */,
 			);
 			path = WQImageDisplayViewUITests;
+			sourceTree = "<group>";
+		};
+		3EA5F66E1D6557BC00DFAEA5 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				3E1935741D62E856005B422E /* WQImageDisplayView.h */,
+				3E1935751D62E856005B422E /* WQImageDisplayView.m */,
+				3E1935711D62E112005B422E /* WQImageDisplayButton.h */,
+				3E1935721D62E112005B422E /* WQImageDisplayButton.m */,
+			);
+			path = Classes;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -207,6 +228,7 @@
 				TargetAttributes = {
 					3E19353A1D62E0E3005B422E = {
 						CreatedOnToolsVersion = 7.3;
+						DevelopmentTeam = NYRBZT6Z59;
 					};
 					3E1935531D62E0E3005B422E = {
 						CreatedOnToolsVersion = 7.3;
@@ -244,6 +266,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3E19354E1D62E0E3005B422E /* LaunchScreen.storyboard in Resources */,
+				3E1935781D630C36005B422E /* place_image.png in Resources */,
 				3E19354B1D62E0E3005B422E /* Assets.xcassets in Resources */,
 				3E1935491D62E0E3005B422E /* Main.storyboard in Resources */,
 			);
@@ -272,6 +295,8 @@
 			files = (
 				3E1935461D62E0E3005B422E /* ViewController.m in Sources */,
 				3E1935431D62E0E3005B422E /* AppDelegate.m in Sources */,
+				3E1935761D62E856005B422E /* WQImageDisplayView.m in Sources */,
+				3E1935731D62E112005B422E /* WQImageDisplayButton.m in Sources */,
 				3E1935401D62E0E3005B422E /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -415,10 +440,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = WQImageDisplayView/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.drcacom.com.WQImageDisplayView;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -426,10 +454,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = WQImageDisplayView/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.drcacom.com.WQImageDisplayView;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
@@ -498,6 +529,7 @@
 				3E19356A1D62E0E3005B422E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3E19356B1D62E0E3005B422E /* Build configuration list for PBXNativeTarget "WQImageDisplayViewTests" */ = {
 			isa = XCConfigurationList;
@@ -506,6 +538,7 @@
 				3E19356D1D62E0E3005B422E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3E19356E1D62E0E3005B422E /* Build configuration list for PBXNativeTarget "WQImageDisplayViewUITests" */ = {
 			isa = XCConfigurationList;
@@ -514,6 +547,7 @@
 				3E1935701D62E0E3005B422E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
