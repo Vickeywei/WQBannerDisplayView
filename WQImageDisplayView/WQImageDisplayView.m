@@ -268,7 +268,6 @@ static CGFloat pageControlHeight = 50;
         self.direction = 1;
     }
     else {
-
         self.direction = 1;
     }
 }
