@@ -13,7 +13,7 @@ Pod::Spec.new do |s|
     s.author       = { "vicky" => "weiqi@hzdracom.com" }  #作者
     s.platform     = :ios, '7.0'    #支持的系统
     s.source       = { :git => "https://github.com/Vickeywei/WQBannerDisplayView.git",:tag => "1.0.1"  }   #源码地址
-    s.source_files  = 'WQImageDisplayView/Classes/*.{h,m}'    #源码
+    s.source_files  = 'WQImageDisplayView/Classes/*.{h,m}'   #源码
     s.requires_arc = true       #是否需要arc
 
 end
