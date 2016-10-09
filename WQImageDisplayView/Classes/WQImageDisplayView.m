@@ -9,7 +9,7 @@
 #import "WQImageDisplayView.h"
 #import "WQImageDisplayButton.h"
 #define WQRGBColor(r,g,b) [UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:1]
-static CGFloat pageControlHeight = 50;
+static CGFloat pageControlHeight = 30;
 @interface WQImageDisplayView ()<UIScrollViewDelegate>
 @property (nullable, strong, nonatomic) UIScrollView * scrollView;
 @property (assign,nonatomic) NSInteger currentPage;//当前页
