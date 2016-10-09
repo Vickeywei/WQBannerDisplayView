@@ -36,6 +36,19 @@ typedef void (^tapBannerAction)(NSInteger index);
  *  @return 轮播图组件实例
  */
 - (instancetype)initWithFrame:(CGRect)frame duration:(CGFloat)duration;
+/**
+ *  @author vicky 2016-08-18 10:45
+ *  初始化轮播图组件
+ *
+ *  @param frame    轮播图组件的frame
+ *  @param duration 每一张图片切换的时长
+ *  @param currentPagePageControlTintColor  当前pagecontrol的颜色
+ *  @param pageControlTintColor pagecontrol的颜色
+ *
+ *
+ *  @return 轮播图组件实例
+ */
+- (instancetype)initWithFrame:(CGRect)frame duration:(CGFloat)duration currentPagePageControlTintColor:(UIColor*)currentPagePageControlTintColor pageControlTintColor:(UIColor*)pageControlTintColor;
 
 
 @end

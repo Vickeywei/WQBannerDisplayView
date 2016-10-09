@@ -17,6 +17,8 @@ static CGFloat pageControlHeight = 30;
 @property (nullable, strong, nonatomic) NSMutableArray * imageArray;//图片数组
 @property (nullable, strong, nonatomic) dispatch_queue_t queue;//下载图片的并发队列
 @property (nullable, strong, nonatomic) NSMutableArray<WQImageDisplayButton*> * buttonArray;//保存三个按钮的数组
+@property (nonatomic, strong)UIColor* currentPagePageControlTintColor;
+@property (nonatomic, strong)UIColor* pageControlTintColor;
 @property (assign, nonatomic) CGFloat direction;//方向
 @property (assign, nonatomic) CGFloat width;//宽度
 @property (assign, nonatomic) CGFloat height;//高度
@@ -43,10 +45,31 @@ static CGFloat pageControlHeight = 30;
         _currentPage = 0;
         _isSourceActive = NO;
         _duration = duration;
+        _pageControlTintColor = [UIColor groupTableViewBackgroundColor];
+        _currentPagePageControlTintColor = WQRGBColor(33, 192, 174);
         [self addSubview:self.scrollView];
         [self addImageButton];
         [self addSubview:self.pageControl];
         
+        [self addDispatchSourceTimer];
+    }
+    return self;
+}
+
+- (instancetype)initWithFrame:(CGRect)frame duration:(CGFloat)duration currentPagePageControlTintColor:(UIColor*)currentPagePageControlTintColor pageControlTintColor:(UIColor*)pageControlTintColor {
+    if (self = [super initWithFrame:frame]) {
+        /**
+         *  初始化scrollview和基础数据
+         */
+        _direction = 1;
+        _currentPage = 0;
+        _isSourceActive = NO;
+        _duration = duration;
+        _pageControlTintColor = pageControlTintColor;
+        _currentPagePageControlTintColor = currentPagePageControlTintColor;
+        [self addSubview:self.scrollView];
+        [self addImageButton];
+        [self addSubview:self.pageControl];
         [self addDispatchSourceTimer];
     }
     return self;
@@ -288,8 +311,8 @@ static CGFloat pageControlHeight = 30;
     if (!_pageControl) {
         _pageControl = [[UIPageControl alloc] initWithFrame:CGRectMake(0, self.height-pageControlHeight,self.width,pageControlHeight)];
         _pageControl.enabled = NO;
-        _pageControl.currentPageIndicatorTintColor = WQRGBColor(33, 192, 174);
-        _pageControl.pageIndicatorTintColor = [UIColor groupTableViewBackgroundColor];
+        _pageControl.currentPageIndicatorTintColor = _currentPagePageControlTintColor;
+        _pageControl.pageIndicatorTintColor = _pageControlTintColor;
     }
     return _pageControl;
 }
